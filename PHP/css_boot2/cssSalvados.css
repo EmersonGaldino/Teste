@@ -1,0 +1,102 @@
+hr{
+border-color:#428bca;
+border-style: 2px solid; 
+border-width: 2px;
+}
+
+input[type="text"] {
+    border:#428bca solid 1px;
+}
+
+.form-control {
+    border:#428bca solid 1px;
+}
+
+.container{
+	color:#2a6496;
+}
+
+.btn{
+	background-color: #2a6496;
+}
+
+.panel-default .panel-heading{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+	color:#2a6496;
+}
+
+.navS {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+}
+.navS > li {
+  position: relative;
+  display: block;
+
+
+}
+.navS > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+
+
+}
+.navS > li > a:hover,
+.navS > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+
+
+}
+.navS > li.disabled > a {
+  color: #ffffff;
+
+
+}
+.navS > li.disabled > a:hover,
+.navS > li.disabled > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+
+}
+.nav-pillsS > li {
+  float: left;
+
+}
+.nav-pillsS > li > a {
+  border-radius: 4px;
+   color: #337ab7 !important;
+  background-color: #d7e5f3;
+
+}
+.nav-pillsS > li + li {
+  margin-left: 2px;
+}
+.nav-pillsS > li.active > a,
+.nav-pillsS > li.active > a:hover,
+.nav-pillsS > li.active > a:focus {
+  color: #ffffff !important;
+  background-color: #337ab7;
+
+}
+.nav-pillsS > .active > a > .badge {
+  color: #ffffff !important;
+  background-color: #ffffff;
+
+}
+.nav-pillsS > li > a > .badge {
+  margin-left: 3px;
+
+}
+

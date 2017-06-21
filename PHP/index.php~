@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<!--Page Galdino-->
+<html>
+<head>
+<?php include('iConecta.php')?>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+ <form enctype="multipart/form-data" action="Upload.php" method="post">
+  <div><input name="nome_evento" type="text"/></div>
+  <div><input name="descricao_evento" type="textarea"/></div>    
+  <input type="hidden" name="MAX_FILE_SIZE" value="99999999"/>
+      <div><input name="imagem" type="file"/></div>
+      <div><input type="submit" value="Salvar"/></div>
+  </form>
+
+
+<div style="width:50%;padding:5px;">
+	<table class="table table-hover table-striped table-bordered">
+		<tr class="info">
+		<td>ID</td>
+		<td>Nome</td>
+		<td>Email</td>
+		</tr>
+	
+	<tr class="warning">
+		<td><?php echo $Codigo?></td>
+		<td><?php echo $Nome?></td>
+		<td><?php echo $Email?></td>
+	</tr>
+	</table> 
+</div>
+
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <a href="#ModalProduto1" data-toggle="modal" data-target="#ModalProduto1"><img src="IMG/Harley.jpg" alt="Imagem Pequena"></a>
+
+      <div class="caption">
+        <h3><?php echo $Nome;?></h3>
+        <p><?php echo $End?></p>
+        <p><a href="#" class="btn btn-primary" role="button" >Comprar</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ModalProduto1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><?php echo $Nome ?></h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        
+				<div class="col-xs-6 col-md-3">	
+    				
+      				<img src="IMG/Harley.jpg" class="thumbnail" width="570" height="300">
+    				
+  				</div>
+		  </div>
+      </div>
+      <div class="modal-footer">
+      
+        <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="IMG/Harley.jpg">
+    </a>
+  </div>
+  
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="IMG/Harley.jpg">
+    </a>
+  </div>
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</body>
